@@ -1,6 +1,6 @@
 const numOfArgs = process.argv.length
 
-if(numOfArgs < 6) {
+if (numOfArgs < 6) {
   console.log('Incorrect Usage')
   process.exit()
 }
@@ -15,8 +15,8 @@ module.exports = robot => {
     try {
       await sandbox(context)
     } catch (err) {
-      console.log('err', err);
-      console.log('Error Occured');
+      console.log('err', err)
+      console.log('Error Occured')
     } finally {
       process.exit()
     }

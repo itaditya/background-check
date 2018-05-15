@@ -5,5 +5,5 @@ module.exports = async context => {
     username: 'itaditya'
   })
   console.log('First Comment: \n', comments[0])
-  console.log('Comments Data', comments.map(comment => ({ url: comment.html_url, body: comment.body })));
+  console.log('Comments Data', comments.map(comment => ({ url: comment.html_url, body: comment.body })))
 }

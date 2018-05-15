@@ -14,5 +14,5 @@ npm start
 # Run sandbox
 npm run sandbox -- --sandboxName
 
-Eg - npm run sandbox -- --getIssues
+Eg - npm run sandbox -- --getCommentsOnIssue
 ```
