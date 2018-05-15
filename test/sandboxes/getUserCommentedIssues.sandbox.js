@@ -1,7 +1,7 @@
-const getIssues = require('../../lib/github-api/getIssues')
+const getUserCommentedIssues = require('../../lib/github-api/getUserCommentedIssues')
 
 module.exports = async context => {
-  const result = await getIssues(context, {
+  const result = await getUserCommentedIssues(context, {
     username: 'itaditya'
   })
   const { data: { total_count, items: issues } } = result

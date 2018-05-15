@@ -1,7 +1,7 @@
-const getComments = require('../../lib/github-api/getComments')
+const getCommentsOnIssue = require('../../lib/github-api/getCommentsOnIssue')
 
 module.exports = async context => {
-  const result = await getComments(context, {
+  const result = await getCommentsOnIssue(context, {
     owner: 'itaditya',
     repo: 'gh-app-test-repo',
     issueNum: 1
