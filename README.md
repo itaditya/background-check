@@ -1,6 +1,6 @@
 # background-finder
 
-> a GitHub App built with [probot](https://github.com/probot/probot) that finds background of a github user when he starts contributing to an open source project.
+> a GitHub App built with [probot](https://github.com/probot/probot) that finds background of github users when they comment on maintainer's repo.
 
 ## Setup
 
