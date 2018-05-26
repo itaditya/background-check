@@ -13,7 +13,8 @@
     "sandbox": "probot simulate sandbox test/fixtures/sandbox.json ./test/sandboxes/sandbox-runner.js",
     "simulate:watch": "sh ./scripts/simulate-watch.sh",
     "lint": "standard --fix",
-    "test": "jest && standard",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "deploy": "git push heroku master"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "superagent": "^3.8.3"
   },
   "devDependencies": {
+    "dotenv": "^5.0.1",
     "jest": "^21.2.1",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
