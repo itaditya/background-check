@@ -69,7 +69,7 @@ describe('that analyseSentiment is working', () => {
       expect(toxicScore).toBe(ERROR_FLAG)
     })
   })
-  describe.only('that errors not related to request are caught', () => {
+  describe('that errors not related to request are caught', () => {
     const expectedToxicScore = 0.7
     beforeEach(() => {
       nock('https://commentanalyzer.googleapis.com/v1alpha1')

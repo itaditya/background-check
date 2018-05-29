@@ -1,6 +1,11 @@
 {
   "action": "sandbox",
   "number": 43,
+  "comment": {
+    "user": {
+      "login": "itaditya"
+    }
+  },
   "repository": {
     "id": 121734483,
     "name": "gh-app-test-repo",
