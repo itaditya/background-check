@@ -1,4 +1,4 @@
-const nock = require('nock');
+const nock = require('nock')
 const request = require('superagent')
 require('dotenv').config()
 
@@ -16,7 +16,7 @@ describe('that analyseSentiment is working', () => {
   test('that simple text works', async() => {
     const text = "@itaditya I don't like the way you do things, your library is a joke"
     const toxicScore = await sentimentAnalyserInstance(text)
-    expect(toxicScore).toBeGreaterThanOrEqual(toxicScore)
+    expect(toxicScore).toBeGreaterThanOrEqual(TOXIC_MIN_VALUE)
   })
   test(`that undefined argument returns ${ERROR_FLAG}`, async() => {
     const toxicScore = await sentimentAnalyserInstance()
@@ -35,7 +35,7 @@ describe('that analyseSentiment is working', () => {
   test('that non toxic text is not considered toxic', async() => {
     const text = "@itaditya I don't know if you are right on this"
     const toxicScore = await sentimentAnalyserInstance(text)
-    expect(toxicScore).toBeLessThanOrEqual(toxicScore)
+    expect(toxicScore).toBeLessThanOrEqual(TOXIC_MIN_VALUE)
   })
   describe('that request errors are handled properly', () => {
     test('that promise rejection is handled properly', async() => {
@@ -70,6 +70,7 @@ describe('that analyseSentiment is working', () => {
     })
   })
   describe.only('that errors not related to request are caught', () => {
+    const TOXIC_SCORE = 0.7
     beforeEach(() => {
       nock('https://commentanalyzer.googleapis.com/v1alpha1')
         .post('/comments:analyze')
@@ -80,19 +81,19 @@ describe('that analyseSentiment is working', () => {
           attributeScores: {
             TOXICITY: {
               summaryScore: {
-                value: 0.7
+                value: TOXIC_SCORE
               }
             }
           }
-        });
+        })
     })
     afterEach(() => {
-      nock.restore();
+      nock.restore()
     })
-    test('returns toxicScore 0.7 using nock intercepted request', async() => {
+    test(`returns toxicScore ${TOXIC_SCORE} using nock intercepted request`, async() => {
       const text = "@itaditya I don't like the way you do things, your library is a joke"
       const toxicScore = await sentimentAnalyserInstance(text)
-      expect(toxicScore).toBe(0.7)
-    });
-  });
+      expect(toxicScore).toBe(TOXIC_SCORE)
+    })
+  })
 })
