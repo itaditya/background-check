@@ -12,7 +12,7 @@ const sentimentAnalyserInstance = analyseSentiment(PERSPECTIVE_API_KEY, {
 const TOXIC_MIN_VALUE = 0.6
 const ERROR_FLAG = -1
 
-describe('that analyseSentiment is working', () => {
+describe.skip('that analyseSentiment is working', () => {
   test('that simple toxic text is detected', async() => {
     const text = "@itaditya I don't like the way you do things, your library is a joke"
     const toxicScore = await sentimentAnalyserInstance(text)

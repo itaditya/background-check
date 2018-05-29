@@ -1,9 +1,7 @@
-require('dotenv').config()
-
 const backgroundFinder = require('../lib/backgroundFinder')
 
-const { PERSPECTIVE_API_KEY } = process.env
-const analyseSentiment = jest.fn().mockReturnValue(jest.fn().mockReturnValue(0.7))
+/* -- Mocks -- */
+const sentimentAnalyser = jest.fn().mockReturnValue(0.7)
 const extractRepoDetails = jest.fn().mockReturnValue({ owner: 'itaditya', repo: 'private-gh-app-test-repo' })
 const getUserCommentedIssues = jest.fn().mockReturnValue({
   data: {
@@ -16,31 +14,32 @@ const getUserCommentedIssues = jest.fn().mockReturnValue({
 })
 const getCommentsOnIssue = jest.fn().mockReturnValue({
   data: [{
+    body: 'this project is the worst out there',
     user: {
       type: 'User',
       login: 'itaditya'
     }
   }]
 })
+/* ^- Mocks -^ */
 
-const backgroundFinderInstance = backgroundFinder(PERSPECTIVE_API_KEY, {
+const backgroundFinderInstance = backgroundFinder({
   dependencies: {
     extractRepoDetails,
     getUserCommentedIssues,
     getCommentsOnIssue,
-    analyseSentiment,
-    request: {}
+    sentimentAnalyser
   }
 })
 
-const context = {
-  payload: { comment: { user: { login: 'itaditya' } } }
-}
-
 test('backgroundFinder is working', async () => {
+  const context = {
+    payload: { comment: { user: { login: 'itaditya' } } },
+    log: console.log
+  }
   await backgroundFinderInstance(context)
   expect(extractRepoDetails).toHaveBeenCalled()
-  expect(analyseSentiment).toHaveBeenCalled()
+  expect(sentimentAnalyser).toHaveBeenCalled()
   expect(getUserCommentedIssues).toHaveBeenCalled()
   expect(getCommentsOnIssue).toHaveBeenCalled()
 })
