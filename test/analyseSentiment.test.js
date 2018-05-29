@@ -13,7 +13,7 @@ const TOXIC_MIN_VALUE = 0.6
 const ERROR_FLAG = -1
 
 describe('that analyseSentiment is working', () => {
-  test('that simple text works', async() => {
+  test('that simple toxic text is detected', async() => {
     const text = "@itaditya I don't like the way you do things, your library is a joke"
     const toxicScore = await sentimentAnalyserInstance(text)
     expect(toxicScore).toBeGreaterThanOrEqual(TOXIC_MIN_VALUE)
@@ -70,7 +70,7 @@ describe('that analyseSentiment is working', () => {
     })
   })
   describe.only('that errors not related to request are caught', () => {
-    const TOXIC_SCORE = 0.7
+    const expectedToxicScore = 0.7
     beforeEach(() => {
       nock('https://commentanalyzer.googleapis.com/v1alpha1')
         .post('/comments:analyze')
@@ -81,7 +81,7 @@ describe('that analyseSentiment is working', () => {
           attributeScores: {
             TOXICITY: {
               summaryScore: {
-                value: TOXIC_SCORE
+                value: expectedToxicScore
               }
             }
           }
@@ -90,10 +90,10 @@ describe('that analyseSentiment is working', () => {
     afterEach(() => {
       nock.restore()
     })
-    test(`returns toxicScore ${TOXIC_SCORE} using nock intercepted request`, async() => {
+    test(`returns toxicScore ${expectedToxicScore} using nock intercepted request`, async() => {
       const text = "@itaditya I don't like the way you do things, your library is a joke"
       const toxicScore = await sentimentAnalyserInstance(text)
-      expect(toxicScore).toBe(TOXIC_SCORE)
+      expect(toxicScore).toBe(expectedToxicScore)
     })
   })
 })
