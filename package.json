@@ -24,6 +24,7 @@
   "devDependencies": {
     "dotenv": "^5.0.1",
     "jest": "^21.2.1",
+    "nock": "^9.2.6",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
     "standard": "^10.0.3"

@@ -1,5 +1,6 @@
-require('dotenv').config()
+const nock = require('nock');
 const request = require('superagent')
+require('dotenv').config()
 
 const analyseSentiment = require('../lib/utils/analyseSentiment')
 
@@ -68,4 +69,30 @@ describe('that analyseSentiment is working', () => {
       expect(toxicScore).toBe(ERROR_FLAG)
     })
   })
+  describe.only('that errors not related to request are caught', () => {
+    beforeEach(() => {
+      nock('https://commentanalyzer.googleapis.com/v1alpha1')
+        .post('/comments:analyze')
+        .query({
+          key: PERSPECTIVE_API_KEY
+        })
+        .reply(200, {
+          attributeScores: {
+            TOXICITY: {
+              summaryScore: {
+                value: 0.7
+              }
+            }
+          }
+        });
+    })
+    afterEach(() => {
+      nock.restore();
+    })
+    test('returns toxicScore 0.7 using nock intercepted request', async() => {
+      const text = "@itaditya I don't like the way you do things, your library is a joke"
+      const toxicScore = await sentimentAnalyserInstance(text)
+      expect(toxicScore).toBe(0.7)
+    });
+  });
 })
