@@ -12,7 +12,7 @@ const sentimentAnalyserInstance = analyseSentiment(PERSPECTIVE_API_KEY, {
 const TOXIC_MIN_VALUE = 0.6
 const ERROR_FLAG = -1
 
-describe.skip('that analyseSentiment is working', () => {
+describe('that analyseSentiment is working', () => {
   test('that simple toxic text is detected', async() => {
     const text = "@itaditya I don't like the way you do things, your library is a joke"
     const toxicScore = await sentimentAnalyserInstance(text)
@@ -44,7 +44,7 @@ describe.skip('that analyseSentiment is working', () => {
         post: function () { return this },
         set: function () { return this },
         send: () => {
-          return Promise.reject('error')
+          return Promise.reject(new Error('error'))
         }
       }
       const fakeSentimentAnalyserInstance = analyseSentiment(PERSPECTIVE_API_KEY, {
@@ -59,7 +59,7 @@ describe.skip('that analyseSentiment is working', () => {
         post: function () { return this },
         set: function () { return this },
         send: () => {
-          throw 'error'
+          throw (new Error('error'))
         }
       }
       const fakeSentimentAnalyserInstance = analyseSentiment(PERSPECTIVE_API_KEY, {

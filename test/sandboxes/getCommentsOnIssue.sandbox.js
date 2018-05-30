@@ -7,5 +7,5 @@ module.exports = async context => {
     issueNum: 2
   })
   const { data: comments } = result
-  console.log('First Comment: \n', result)
+  console.log('First Comment: \n', comments[0])
 }
