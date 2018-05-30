@@ -15,8 +15,9 @@
     "lint": "standard --fix",
     "test": "jest",
     "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
     "deploy": "git push heroku master",
-    "precommit": "lint-staged && npm test"
+    "precommit": "lint-staged && npm run coverage"
   },
   "lint-staged": {
     "*.js": [
@@ -45,5 +46,8 @@
     "env": [
       "jest"
     ]
+  },
+  "jest": {
+    "verbose": true
   }
 }
