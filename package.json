@@ -17,7 +17,7 @@
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "deploy": "git push heroku master",
-    "precommit": "lint-staged & npm run coverage"
+    "precommit": "lint-staged && npm run coverage"
   },
   "lint-staged": {
     "*.js": [
