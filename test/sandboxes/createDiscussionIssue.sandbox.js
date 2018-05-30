@@ -5,5 +5,5 @@ module.exports = async context => {
     owner: 'itaditya',
     username: 'itaditya'
   })
-  console.log(result);
+  console.log(result)
 }
