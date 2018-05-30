@@ -37,7 +37,7 @@ describe('that analyseSentiment is working', () => {
     const toxicScore = await sentimentAnalyserInstance(text)
     expect(toxicScore).toBeLessThanOrEqual(TOXIC_MIN_VALUE)
   })
-  describe.only('that request errors are handled properly', () => {
+  describe('that request errors are handled properly', () => {
     test('that promise rejection is handled properly', async() => {
       const text = "@itaditya I don't know if you are right on this"
       const faultyRequest = {
