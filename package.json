@@ -15,7 +15,14 @@
     "lint": "standard --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "precommit": "lint-staged && npm test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "probot": "^6.0.0",
@@ -23,7 +30,9 @@
   },
   "devDependencies": {
     "dotenv": "^5.0.1",
+    "husky": "^0.14.3",
     "jest": "^21.2.1",
+    "lint-staged": "^7.1.2",
     "nock": "^9.2.6",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
