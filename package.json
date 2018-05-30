@@ -12,12 +12,12 @@
     "simulate": "sh ./scripts/simulate.sh",
     "simulate:watch": "sh ./scripts/simulate-watch.sh",
     "sandbox": "probot simulate sandbox test/fixtures/sandbox.json ./test/sandboxes/sandbox-runner.js",
-    "lint": "standard --fix",
+    "lint": "standard --verbose --fix | snazzy",
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "deploy": "git push heroku master",
-    "precommit": "lint-staged && npm run coverage"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
@@ -37,6 +37,7 @@
     "nock": "^9.2.6",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.1",
+    "snazzy": "^7.1.1",
     "standard": "^10.0.3"
   },
   "engines": {
