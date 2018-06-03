@@ -9,10 +9,22 @@ const getUserDiscussionIssue = jest.fn().mockReturnValue({
 })
 const getUserCommentedIssues = jest.fn().mockReturnValue({
   data: {
-    total_count: 1,
+    total_count: 3,
     items: [{
       number: 15,
-      repository_url: 'https://api.github.com/repos/aps120797/playground'
+      repository_url: 'https://api.github.com/repos/aps120797/playground',
+      url: 'https://api.github.com/repos/aps120797/playground/issues/17',
+      html_url: 'https://github.com/aps120797/playground/issues/17'
+    }, {
+      number: 15,
+      repository_url: 'https://api.github.com/repos/aps120797/playground',
+      url: 'https://api.github.com/repos/aps120797/playground/issues/17',
+      html_url: 'https://github.com/aps120797/playground/issues/17'
+    }, {
+      number: 15,
+      repository_url: 'https://api.github.com/repos/aps120797/playground',
+      url: 'https://api.github.com/repos/aps120797/playground/issues/17',
+      html_url: 'https://github.com/aps120797/playground/issues/17'
     }]
   }
 })
@@ -27,7 +39,10 @@ const getCommentsOnIssue = jest.fn().mockReturnValue({
 })
 const sentimentAnalyser = jest.fn().mockReturnValue(0.7)
 const createDiscussionIssue = jest.fn().mockReturnValue(Promise.resolve({
-  status: 200
+  status: 200,
+  data: {
+    html_url: 'https://github.com/itaditya/maintainers-discussion/issues/17'
+  }
 }))
 /* ^- Mocks -^ */
 
