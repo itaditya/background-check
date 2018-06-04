@@ -1,0 +1,26 @@
+{
+  "coverage": "0%",
+  "expectCount": 7,
+  "actualCount": 0,
+  "files": {
+    "lib/getPublicComments.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        15,
+        21
+      ]
+    },
+    "lib/utils/getBinarySize.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    }
+  }
+}
