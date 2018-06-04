@@ -1,0 +1,885 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "lib/backgroundFinder.js",
+    "content": "/**\r\n * backgroundFinder module\r\n */\r\n\r\nmodule.exports = ({ dependencies: { extractRepoDetails, getUserDiscussionIssue, getUserCommentedIssues, getCommentsOnIssue, sentimentAnalyser, createDiscussionIssue } }) => {\r\n  /**\r\n     * backgroundFinder\r\n     * @param {object} context - context argument.\r\n   */\r\n  const backgroundFinder = async(context) => {\r\n    if (context.isBot) return\r\n    const owner = context.payload.repository.owner.login\r\n    const username = context.payload.comment.user.login\r\n    context.log(`Analyis for ${username} has started`)\r\n\r\n    /* -- Check if user is already found hostile -- */\r\n    const userIssueResult = await getUserDiscussionIssue(context, { owner, username })\r\n    const alreadyFoundHostile = userIssueResult.data.total_count >= 1\r\n    if (alreadyFoundHostile) {\r\n      context.log(`${username} has already been found hostile before.\\nTerminating ${username}'s analysis.`)\r\n      return\r\n    }\r\n    /* ^- -^ */\r\n\r\n    context.log(`${username} has not been found hostile before. \\nCollection of Public Comments starting.`)\r\n    const issuesResult = await getUserCommentedIssues(context, { username })\r\n    const { data: { items: issues } } = issuesResult\r\n    const userToxicComments = []\r\n    let userToxicCommentsLimit = 3\r\n    let totalUserComments = 0\r\n\r\n    for (let issue of issues) {\r\n      // for each issue in search result\r\n      const issueNum = issue.number\r\n      const repoUrl = issue.repository_url\r\n      context.log(`Fetching comments on ${issue.url}`)\r\n      const { data: commentsOnIssue } = await getCommentsOnIssue(context, { issueNum, ...extractRepoDetails(repoUrl) })\r\n\r\n      // we'll get 30 comments on issueNum issue\r\n      const userCommentsOnIssue = [] // stores only the username's comments\r\n      for (let comment of commentsOnIssue) {\r\n        if (comment.user.type !== 'Bot' && comment.user.login === username) {\r\n          userCommentsOnIssue.push(comment)\r\n        }\r\n      }\r\n      totalUserComments += userCommentsOnIssue.length\r\n\r\n      let commentBlob = userCommentsOnIssue.map(comment => comment.body).join('.\\n')\r\n      if (commentBlob.length <= 0) continue // empty commentBlob\r\n\r\n      const toxicScore = await sentimentAnalyser(commentBlob.substr(0, 3000)) // perspective api limits the text size to 3000B\r\n      const isToxic = toxicScore >= 0.6\r\n      context.log('toxicScore is', toxicScore)\r\n      if (isToxic) {\r\n        userToxicCommentsLimit -= 1\r\n        userToxicComments.push({\r\n          link: issue.html_url,\r\n          text: commentBlob,\r\n          toxicScore\r\n        })\r\n      }\r\n\r\n      if (userToxicCommentsLimit <= 0) {\r\n        const { data: discussionIssueData } = await createDiscussionIssue(context, { username, owner, toxicComments: userToxicComments })\r\n        context.log(`Discussion issue for ${username} has been created. Check out ${discussionIssueData.html_url}`)\r\n        context.log(`${username}'s ${totalUserComments} comments were analysed`)\r\n        break\r\n      }\r\n    }\r\n  }\r\n\r\n  return backgroundFinder\r\n}\r\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/backgroundFinder.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "lib/getPublicComments.js",
+    "content": "const extractRepoDetails = require('./utils/extractRepoDetailsFromUrl')\r\nconst filterUserComments = require('./utils/filterUserComments')\r\nconst getUserCommentedIssues = require('./github-api/getUserCommentedIssues')\r\nconst getCommentsOnIssue = require('./github-api/getCommentsOnIssue')\r\n\r\nmodule.exports = async(context, { username }) => {\r\n  const issuesResult = await getUserCommentedIssues(context, { username })\r\n  const { data: { total_count, items: issues } } = issuesResult\r\n  console.log('total_count', total_count)\r\n  const commentsResults = await getCommentsOnIssues(context, { issues })\r\n  const userComments = getUserComments(commentsResults, username)\r\n  return userComments\r\n}\r\n\r\nasync function getCommentsOnIssues (context, { issues }) {\r\n  const commentsPromises = issues\r\n    .map(({ number, repository_url: url }) => getCommentsOnIssue(context, { issueNum: number, ...extractRepoDetails(url) }))\r\n  return Promise.all(commentsPromises)\r\n}\r\n\r\nfunction getUserComments (commentsResults, username) {\r\n  const userComments = []\r\n  commentsResults.forEach(({ data: commentsData }) => {\r\n    const userCommentsOnIssue = filterUserComments(commentsData, username)\r\n    // userCommentsOnIssue is an array holding the wanted user's comment on current issue\r\n    userComments.push(...userCommentsOnIssue) // flatten and store the array\r\n  })\r\n  // userComments hold all his comments on all issues\r\n  return userComments\r\n}\r\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/getPublicComments.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "extractRepoDetails",
+    "memberof": "lib/getPublicComments.js",
+    "static": true,
+    "longname": "lib/getPublicComments.js~extractRepoDetails",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "filterUserComments",
+    "memberof": "lib/getPublicComments.js",
+    "static": true,
+    "longname": "lib/getPublicComments.js~filterUserComments",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "getUserCommentedIssues",
+    "memberof": "lib/getPublicComments.js",
+    "static": true,
+    "longname": "lib/getPublicComments.js~getUserCommentedIssues",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "getCommentsOnIssue",
+    "memberof": "lib/getPublicComments.js",
+    "static": true,
+    "longname": "lib/getPublicComments.js~getCommentsOnIssue",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "getCommentsOnIssues",
+    "memberof": "lib/getPublicComments.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "lib/getPublicComments.js~getCommentsOnIssues",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "context",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "objectPattern1",
+        "types": [
+          "{\"issues\": *}"
+        ],
+        "defaultRaw": {
+          "issues": null
+        },
+        "defaultValue": "{\"issues\":null}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "getUserComments",
+    "memberof": "lib/getPublicComments.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/getPublicComments.js~getUserComments",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/getPublicComments.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "commentsResults",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "username",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "lib/github-api/createDiscussionIssue.js",
+    "content": "module.exports = (context, { owner, username, toxicComments }) => {\r\n  toxicComments.sort((a, b) => b.toxicScore - a.toxicScore) // sort in decreasing toxicScore order\r\n  const toxicDataText = toxicComments.map(({ link, text, toxicScore }) => `\r\n   1. ${link} has a toxicity rating of **${toxicScore}** :\r\n   \r\n       > ${text}\r\n  `).join('\\n')\r\n\r\n  return context.github.issues.create({\r\n    owner,\r\n    repo: 'maintainers-discussion',\r\n    title: `${username}-discussion`,\r\n    body: `Some comments from @${username} have been found to be toxic. Review the following comments and discuss whether or not you would like to allow this contributor to participate in your community.\r\n\r\n${toxicDataText}`\r\n  })\r\n}\r\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/github-api/createDiscussionIssue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "lib/github-api/getCommentsOnIssue.js",
+    "content": "module.exports = (context, { owner, repo, issueNum }) => {\n  return context.github.issues.getComments({\n    owner,\n    repo,\n    number: issueNum\n  })\n}\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/github-api/getCommentsOnIssue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "lib/github-api/getUserCommentedIssues.js",
+    "content": "module.exports = (context, { username }) => {\n  return context.github.search.issues({\n    q: `commenter:${username}`\n  })\n}\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/github-api/getUserCommentedIssues.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "lib/github-api/getUserDiscussionIssue.js",
+    "content": "module.exports = (context, { owner, username }) => {\r\n  return context.github.search.issues({\r\n    q: `repo:${owner}/maintainers-discussion is:issue is:open in:title ${username}-discussion`\r\n  })\r\n}\r\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/github-api/getUserDiscussionIssue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "lib/utils/analyseSentiment.js",
+    "content": "module.exports = (perspectiveApiKey, { dependencies: { request } }) => {\r\n  const BASE_URL = 'https://commentanalyzer.googleapis.com/v1alpha1'\r\n  const API_URL = `${BASE_URL}/comments:analyze?key=${perspectiveApiKey}`\r\n\r\n  const analyseSentiment = async (text) => {\r\n    if (!text) return -1\r\n    const textLength = text.length\r\n    if (textLength < 1 || textLength > 3000) return -1 // perspective api text limit 3000B\r\n    try {\r\n      const response = await request.post(API_URL)\r\n      .set('Content-Type', 'application/json')\r\n      .send({\r\n        comment: { text },\r\n        languages: ['en'],\r\n        requestedAttributes: { TOXICITY: {} }\r\n      })\r\n\r\n      const score = response.body.attributeScores.TOXICITY.summaryScore.value\r\n      return score\r\n    } catch (err) {\r\n      console.log('err', err)\r\n      return -1\r\n    }\r\n  }\r\n\r\n  return analyseSentiment\r\n}\r\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/utils/analyseSentiment.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "lib/utils/extractRepoDetailsFromUrl.js",
+    "content": "module.exports = (repoUrl) => {\n  const lastSlashIndex = repoUrl.lastIndexOf('/')\n  const repo = repoUrl.substr(lastSlashIndex + 1)\n  const repoRemovedUrl = repoUrl.slice(0, lastSlashIndex)\n  const secondLastSlashIndex = repoRemovedUrl.lastIndexOf('/')\n  const owner = repoRemovedUrl.substr(secondLastSlashIndex + 1)\n  return { owner, repo }\n}\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/utils/extractRepoDetailsFromUrl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "lib/utils/filterUserComments.js",
+    "content": "module.exports = (comments, username) => {\n  const userComments = comments.filter(comment => comment.user.login === username)\n  return userComments\n}\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/utils/filterUserComments.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "lib/utils/getBinarySize.js",
+    "content": "function getBinarySize (s) {\n  return Buffer.byteLength(s, 'utf16')\n}\n\nmodule.exports = getBinarySize\n",
+    "static": true,
+    "longname": "F:/git/Automation/background-finder/lib/utils/getBinarySize.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "getBinarySize",
+    "memberof": "lib/utils/getBinarySize.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/utils/getBinarySize.js~getBinarySize",
+    "access": "public",
+    "export": false,
+    "importPath": "background-finder/lib/utils/getBinarySize.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "s",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# background-finder\r\n\r\n> a GitHub App built with [probot](https://github.com/probot/probot) that finds background of github users when they comment on maintainer's repo.\r\n\r\n## Setup\r\n\r\n```sh\r\n# Install dependencies\r\nnpm install\r\n\r\n# Run the bot\r\nnpm start\r\n\r\n# Run sandbox\r\nnpm run sandbox -- --sandboxName\r\n\r\nEg - npm run sandbox -- --getCommentsOnIssue\r\n```\r\n",
+    "longname": "F:\\git\\Automation\\background-finder\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"background-finder\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"author\": \"Aditya Agarwal <adityaa803@gmail.com> (adi.surge.sh)\",\n  \"license\": \"ISC\",\n  \"repository\": \"https://github.com/itaditya/probot-demo-bot.git\",\n  \"scripts\": {\n    \"dev\": \"nodemon --exec \\\"npm start\\\"\",\n    \"start\": \"probot run ./index.js\",\n    \"probot\": \"probot\",\n    \"simulate\": \"sh ./scripts/simulate.sh\",\n    \"simulate:watch\": \"sh ./scripts/simulate-watch.sh\",\n    \"sandbox\": \"probot simulate sandbox test/fixtures/sandbox.json ./test/sandboxes/sandbox-runner.js\",\n    \"lint\": \"standard --verbose --fix | snazzy\",\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watch\",\n    \"coverage\": \"jest --coverage\",\n    \"docs\": \"esdoc\",\n    \"deploy\": \"git push heroku master\",\n    \"precommit\": \"lint-staged && npm run coverage\"\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint\",\n      \"git add\"\n    ]\n  },\n  \"dependencies\": {\n    \"probot\": \"^6.0.0\",\n    \"superagent\": \"^3.8.3\"\n  },\n  \"devDependencies\": {\n    \"documentation\": \"^7.1.0\",\n    \"dotenv\": \"^5.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"husky\": \"^0.14.3\",\n    \"jest\": \"^21.2.1\",\n    \"lint-staged\": \"^7.1.2\",\n    \"nock\": \"^9.2.6\",\n    \"nodemon\": \"^1.17.2\",\n    \"smee-client\": \"^1.0.1\",\n    \"snazzy\": \"^7.1.1\",\n    \"standard\": \"^10.0.3\"\n  },\n  \"engines\": {\n    \"node\": \">= 8.3.0\"\n  },\n  \"standard\": {\n    \"ignore\": [\n      \"docs\",\n      \"public\",\n      \"scripts\",\n      \"assets\"\n    ],\n    \"env\": [\n      \"jest\"\n    ]\n  },\n  \"jest\": {\n    \"verbose\": true\n  }\n}\n",
+    "longname": "F:\\git\\Automation\\background-finder\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
