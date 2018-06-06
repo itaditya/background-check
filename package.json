@@ -19,11 +19,12 @@
     "docs": "documentation build lib/** -f html -o docs",
     "docs:serve": "documentation serve --watch lib/**",
     "deploy": "git push heroku master",
-    "precommit": "lint-staged && npm run coverage"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
+    "{lib,test}/**/*.js": [
       "npm run lint",
+      "npm run test -- --bail --findRelatedTests",
       "git add"
     ]
   },
