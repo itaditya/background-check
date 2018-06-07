@@ -25,9 +25,9 @@
               
                 
                 <li><a
-                  href='#backgroundfinder'
+                  href='#backgroundfindermodule'
                   class="">
-                  backgroundFinder
+                  backgroundFinderModule
                   
                 </a>
                 
@@ -38,6 +38,16 @@
                   href='#backgroundfinder'
                   class="">
                   backgroundFinder
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getuserdiscussionissue'
+                  class="">
+                  getUserDiscussionIssue
                   
                 </a>
                 
@@ -58,8 +68,8 @@
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='backgroundfinder'>
-      backgroundFinder
+    <h3 class='fl m0' id='backgroundfindermodule'>
+      backgroundFinderModule
     </h3>
     
     
@@ -69,7 +79,7 @@
   <p>backgroundFinder module</p>
 
 
-  <div class='pre p1 fill-light mt0'>backgroundFinder($0: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  <div class='pre p1 fill-light mt0'>backgroundFinderModule</div>
   
   
 
@@ -86,7 +96,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+            <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
 	    
           </div>
           
@@ -104,7 +114,78 @@
             <tbody class='mt1'>
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.extractRepoDetails</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>
+  </td>
+  <td class='break-word'><span>accepts the dependecies following 
+<strong>dependency inversion principle</strong>
+.
+</span></td>
+</tr>
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.extractRepoDetails</span> <code class='quiet'>extractRepoDetails</code>
+  </td>
+  <td class='break-word'><span>utility to extract owner and repo name from 
+<strong>repoUrl</strong>
+.
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.getUserDiscussionIssue</span> <code class='quiet'><a href="#getuserdiscussionissue">getUserDiscussionIssue</a></code>
+  </td>
+  <td class='break-word'><span>github-api method to search issue for user in maintainers-discussion repo.
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.getUserCommentedIssues</span> <code class='quiet'>getUserCommentedIssues</code>
+  </td>
+  <td class='break-word'><span>github-api method to search issues on which user commented.
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.getCommentsOnIssue</span> <code class='quiet'>getCommentsOnIssue</code>
+  </td>
+  <td class='break-word'><span>github-api method to fetch comments of an issue.
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.sentimentAnalyser</span> <code class='quiet'>sentimentAnalyser</code>
+  </td>
+  <td class='break-word'><span>utility to analyse sentiment of a comment.
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionIssue</span> <code class='quiet'>createDiscussionIssue</code>
+  </td>
+  <td class='break-word'><span>github-api method to create issue for a hostile user in 
+<strong>maintainers-discussion</strong>
+ repo.
+</span></td>
+</tr>
+
+
+  
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.extractRepoDetails</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -112,7 +193,7 @@
 
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.getUserDiscussionIssue</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.getUserDiscussionIssue</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -120,7 +201,7 @@
 
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.getUserCommentedIssues</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.getUserCommentedIssues</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -128,7 +209,7 @@
 
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.getCommentsOnIssue</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.getCommentsOnIssue</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -136,7 +217,7 @@
 
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.sentimentAnalyser</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.sentimentAnalyser</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -144,7 +225,7 @@
 
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.dependencies.createDiscussionIssue</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionIssue</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -162,9 +243,23 @@
   
 
   
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#backgroundfinder">backgroundFinder</a></code>:
+        
+
+      
+    
+  
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> backgroundFinder = backgroundFinderModule({ <span class="hljs-attr">dependencies</span>: {} })</pre>
+    
   
 
   
@@ -190,7 +285,7 @@
   </div>
   
 
-  <p>backgroundFinder</p>
+  <p>backgroundFinder method</p>
 
 
   <div class='pre p1 fill-light mt0'>backgroundFinder</div>
@@ -222,6 +317,132 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">await</span> backgroundFinder(context)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getuserdiscussionissue'>
+      getUserDiscussionIssue
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>getUserDiscussionIssue github-api method</p>
+
+
+  <div class='pre p1 fill-light mt0'>getUserDiscussionIssue(context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.owner</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>owner of repo
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>username to search open issue for in the 
+<strong>owner/maintainers-discussion</strong>
+ repo
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a></code>:
+        
+
+      
+    
   
 
   
