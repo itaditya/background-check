@@ -1,6 +1,6 @@
 # background-check
 
-> a GitHub App built with [probot](https://github.com/probot/probot) that finds background of github users when they comment on maintainer's repo.
+> A GitHub App built with [probot](https://github.com/probot/probot) that peforms a "background check" to identify users who have been toxic in the past, and shares their toxic activity in the maintainer’s repo.
 
 ![Demo](assets/demonstration.png?raw=true)
 
