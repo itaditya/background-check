@@ -45,6 +45,36 @@
               
                 
                 <li><a
+                  href='#creatediscussionissue'
+                  class="">
+                  createDiscussionIssue
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getcommentsonissue'
+                  class="">
+                  getCommentsOnIssue
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getusercommentedissues'
+                  class="">
+                  getUserCommentedIssues
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#getuserdiscussionissue'
                   class="">
                   getUserDiscussionIssue
@@ -144,7 +174,7 @@
 
   
     <tr>
-  <td class='break-word'><span class='code bold'>params.dependencies.getUserCommentedIssues</span> <code class='quiet'>getUserCommentedIssues</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.getUserCommentedIssues</span> <code class='quiet'><a href="#getusercommentedissues">getUserCommentedIssues</a></code>
   </td>
   <td class='break-word'><span>github-api method to search issues on which user commented.
 </span></td>
@@ -153,7 +183,7 @@
 
   
     <tr>
-  <td class='break-word'><span class='code bold'>params.dependencies.getCommentsOnIssue</span> <code class='quiet'>getCommentsOnIssue</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.getCommentsOnIssue</span> <code class='quiet'><a href="#getcommentsonissue">getCommentsOnIssue</a></code>
   </td>
   <td class='break-word'><span>github-api method to fetch comments of an issue.
 </span></td>
@@ -171,7 +201,7 @@
 
   
     <tr>
-  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionIssue</span> <code class='quiet'>createDiscussionIssue</code>
+  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionIssue</span> <code class='quiet'><a href="#creatediscussionissue">createDiscussionIssue</a></code>
   </td>
   <td class='break-word'><span>github-api method to create issue for a hostile user in 
 <strong>maintainers-discussion</strong>
@@ -352,6 +382,347 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='creatediscussionissue'>
+      createDiscussionIssue
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>createDiscussionIssue github-api method used to open an issue in <strong>owner/maintainers-discussion</strong> repo. The issue description will have a list of the toxic comments of user in non increasing order of their toxicity.</p>
+
+
+  <div class='pre p1 fill-light mt0'>createDiscussionIssue(context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.owner</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>owner of repo
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>username to create issue for in the 
+<strong>data.owner/maintainers-discussion</strong>
+ repo
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.toxicComments</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span>list of toxicComments of the data.username user
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getcommentsonissue'>
+      getCommentsOnIssue
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>getCommentsOnIssue github-api method used to get a paginated list of comments on an issue.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getCommentsOnIssue(context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.owner</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>owner of repo
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.repo</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>name of repo
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.issueNum</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span>issue number of the issue in data.owner/data.repo repository
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getusercommentedissues'>
+      getUserCommentedIssues
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>getUserCommentedIssues <strong>github-api method</strong> used to search for issues in which <strong>data.username</strong> has commented.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getUserCommentedIssues(context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>username to search commented isssues for
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='getuserdiscussionissue'>
       getUserDiscussionIssue
     </h3>
@@ -418,7 +789,7 @@
   <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
   </td>
   <td class='break-word'><span>username to search open issue for in the 
-<strong>owner/maintainers-discussion</strong>
+<strong>data.owner/maintainers-discussion</strong>
  repo
 </span></td>
 </tr>
