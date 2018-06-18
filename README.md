@@ -2,6 +2,8 @@
 
 > A GitHub App built with [probot](https://github.com/probot/probot) that peforms a "background check" to identify users who have been toxic in the past, and shares their toxic activity in the maintainer’s repo.
 
+[![Inline docs](http://inch-ci.org/github/probot/background-check.svg?branch=master)](http://inch-ci.org/github/probot/background-check)
+
 ![Demo](assets/demonstration.png?raw=true)
 
 ## How to Use
