@@ -10,7 +10,7 @@ module.exports = async context => {
     text: "what is the meaning of this, are you mad? Seriously how could you create such a sinister thing. I curse that your bot doesn't work",
     toxicScore: 0.6
   }]
-  const result = await createDiscussionIssue(context, {
+  const result = await createDiscussionIssue(context.github, {
     owner: 'itaditya',
     username: 'itaditya',
     toxicComments
