@@ -9,6 +9,6 @@ module.exports = async context => {
     token: process.env.GITHUB_ACCESS_TOKEN
   })
   await createDiscussionRepo(octokit, {
-    owner: 'test-org'
+    appInstallerName: 'test-org'
   })
 }
