@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createDiscussionRepo is working 1`] = `
+Array [
+  Array [
+    Object {
+      "auto_init": true,
+      "description": "Repo to have discussions about toxic users",
+      "name": "test-org-discussions",
+      "org": "probot-background-check",
+    },
+  ],
+]
+`;
