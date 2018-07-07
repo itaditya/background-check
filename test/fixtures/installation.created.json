@@ -1,0 +1,85 @@
+{
+  "action": "created",
+  "installation": {
+    "id": 232862,
+    "account": {
+      "login": "probot-test-org",
+      "id": 40889290,
+      "node_id": "MDEyOk9yZ2FuaXphdGlvbjQwODg5Mjkw",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40889290?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/probot-test-org",
+      "html_url": "https://github.com/probot-test-org",
+      "followers_url": "https://api.github.com/users/probot-test-org/followers",
+      "following_url": "https://api.github.com/users/probot-test-org/following{/other_user}",
+      "gists_url": "https://api.github.com/users/probot-test-org/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/probot-test-org/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/probot-test-org/subscriptions",
+      "organizations_url": "https://api.github.com/users/probot-test-org/orgs",
+      "repos_url": "https://api.github.com/users/probot-test-org/repos",
+      "events_url": "https://api.github.com/users/probot-test-org/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/probot-test-org/received_events",
+      "type": "Organization",
+      "site_admin": false
+    },
+    "repository_selection": "selected",
+    "access_tokens_url": "https://api.github.com/installations/232862/access_tokens",
+    "repositories_url": "https://api.github.com/installation/repositories",
+    "html_url": "https://github.com/organizations/probot-test-org/settings/installations/232862",
+    "app_id": 11546,
+    "target_id": 40889290,
+    "target_type": "Organization",
+    "permissions": {
+      "members": "write",
+      "pull_requests": "write",
+      "team_discussions": "write",
+      "issues": "write",
+      "administration": "write",
+      "metadata": "read",
+      "contents": "read"
+    },
+    "events": [
+      "issues",
+      "issue_comment",
+      "label",
+      "member",
+      "organization",
+      "pull_request",
+      "repository",
+      "team",
+      "team_add",
+      "watch"
+    ],
+    "created_at": 1530874729,
+    "updated_at": 1530874729,
+    "single_file_name": null
+  },
+  "repositories": [
+    {
+      "id": 139973351,
+      "name": "playground",
+      "full_name": "probot-test-org/playground",
+      "private": false
+    }
+  ],
+  "sender": {
+    "login": "itaditya",
+    "id": 15871340,
+    "node_id": "MDQ6VXNlcjE1ODcxMzQw",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/15871340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/itaditya",
+    "html_url": "https://github.com/itaditya",
+    "followers_url": "https://api.github.com/users/itaditya/followers",
+    "following_url": "https://api.github.com/users/itaditya/following{/other_user}",
+    "gists_url": "https://api.github.com/users/itaditya/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/itaditya/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/itaditya/subscriptions",
+    "organizations_url": "https://api.github.com/users/itaditya/orgs",
+    "repos_url": "https://api.github.com/users/itaditya/repos",
+    "events_url": "https://api.github.com/users/itaditya/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/itaditya/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
