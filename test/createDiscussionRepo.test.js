@@ -1,5 +1,7 @@
 const createDiscussionRepo = require('../lib/github-api/createDiscussionRepo')
 
+process.env.APP_ORG_NAME = 'probot-background-check'
+
 test('createDiscussionRepo is working', async () => {
   const github = {
     repos: { createForOrg: jest.fn() }

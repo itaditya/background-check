@@ -1,4 +1,3 @@
-require('dotenv').config({path: '../../.env'})
 const githubClient = require('probot/lib/github')()
 
 const createDiscussionRepo = require('../../lib/github-api/createDiscussionRepo')
@@ -19,6 +18,8 @@ module.exports = async context => {
 
   const appInstallerName = 'itaditya-' + Math.random()
 
+  console.log(process.env.APP_ORG_NAME)
+
   Object.assign(context.payload, {
     installation: {
       account: {
@@ -26,7 +27,7 @@ module.exports = async context => {
       }
     },
     sender: {
-      login: 'bkeepers'
+      login: 'bot-42'
     }
   })
   await discussionBoardSetup(context)

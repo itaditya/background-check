@@ -1,4 +1,3 @@
-require('dotenv').config({path: '../../.env'})
 const octokit = require('probot/lib/github')()
 
 const createDiscussionRepo = require('../../lib/github-api/createDiscussionRepo')
