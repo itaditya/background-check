@@ -1,3 +1,4 @@
+require('dotenv').config({path: '../../.env'})
 const numOfArgs = process.argv.length
 
 if (numOfArgs < 6) {
