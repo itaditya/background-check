@@ -15,7 +15,7 @@ test('createDiscussionRepo is working', async () => {
     org: 'probot-background-check',
     name: 'test-org-discussions',
     description: 'Repo to have discussions about toxic users',
-    // private: true,
+    private: true,
     auto_init: true
   })
 
