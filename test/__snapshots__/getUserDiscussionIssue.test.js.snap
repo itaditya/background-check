@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUserDiscussionIssue is working 1`] = `
+Array [
+  Array [
+    Object {
+      "q": "repo:probot-background-check/itaditya-discussions is:issue is:open in:title itaditya-discussion",
+    },
+  ],
+]
+`;

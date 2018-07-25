@@ -66,10 +66,10 @@ test('backgroundFinder is working', async () => {
     log: console.log
   }
   await backgroundFinderInstance(context)
-  expect(extractRepoDetails).toHaveBeenCalled()
-  expect(getUserDiscussionIssue).toHaveBeenCalled()
-  expect(getUserCommentedIssues).toHaveBeenCalled()
-  expect(getCommentsOnIssue).toHaveBeenCalled()
-  expect(sentimentAnalyser).toHaveBeenCalled()
-  expect(createDiscussionIssue).toHaveBeenCalled()
+  expect(extractRepoDetails.mock.calls).toMatchSnapshot()
+  expect(getUserDiscussionIssue.mock.calls).toMatchSnapshot()
+  expect(getUserCommentedIssues.mock.calls).toMatchSnapshot()
+  expect(getCommentsOnIssue.mock.calls).toMatchSnapshot()
+  expect(sentimentAnalyser.mock.calls).toMatchSnapshot()
+  expect(createDiscussionIssue.mock.calls).toMatchSnapshot()
 })

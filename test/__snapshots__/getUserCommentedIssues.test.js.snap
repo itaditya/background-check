@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUserCommentedIssues is working 1`] = `
+Array [
+  Array [
+    Object {
+      "q": "commenter:itaditya",
+    },
+  ],
+]
+`;

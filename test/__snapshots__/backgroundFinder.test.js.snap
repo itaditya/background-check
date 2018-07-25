@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`backgroundFinder is working 1`] = `
+Array [
+  Array [
+    "https://api.github.com/repos/aps120797/playground",
+  ],
+  Array [
+    "https://api.github.com/repos/aps120797/playground",
+  ],
+  Array [
+    "https://api.github.com/repos/aps120797/playground",
+  ],
+]
+`;
+
+exports[`backgroundFinder is working 2`] = `
+Array [
+  Array [
+    undefined,
+    Object {
+      "owner": "itaditya",
+      "username": "itaditya",
+    },
+  ],
+]
+`;
+
+exports[`backgroundFinder is working 3`] = `
+Array [
+  Array [
+    undefined,
+    Object {
+      "username": "itaditya",
+    },
+  ],
+]
+`;
+
+exports[`backgroundFinder is working 4`] = `
+Array [
+  Array [
+    undefined,
+    Object {
+      "issueNum": 15,
+      "owner": "itaditya",
+      "repo": "private-gh-app-test-repo",
+    },
+  ],
+  Array [
+    undefined,
+    Object {
+      "issueNum": 15,
+      "owner": "itaditya",
+      "repo": "private-gh-app-test-repo",
+    },
+  ],
+  Array [
+    undefined,
+    Object {
+      "issueNum": 15,
+      "owner": "itaditya",
+      "repo": "private-gh-app-test-repo",
+    },
+  ],
+]
+`;
+
+exports[`backgroundFinder is working 5`] = `
+Array [
+  Array [
+    "this project is the worst out there",
+  ],
+  Array [
+    "this project is the worst out there",
+  ],
+  Array [
+    "this project is the worst out there",
+  ],
+]
+`;
+
+exports[`backgroundFinder is working 6`] = `
+Array [
+  Array [
+    undefined,
+    Object {
+      "owner": "itaditya",
+      "toxicComments": Array [
+        Object {
+          "link": "https://github.com/aps120797/playground/issues/17",
+          "text": "this project is the worst out there",
+          "toxicScore": 0.7,
+        },
+        Object {
+          "link": "https://github.com/aps120797/playground/issues/17",
+          "text": "this project is the worst out there",
+          "toxicScore": 0.7,
+        },
+        Object {
+          "link": "https://github.com/aps120797/playground/issues/17",
+          "text": "this project is the worst out there",
+          "toxicScore": 0.7,
+        },
+      ],
+      "username": "itaditya",
+    },
+  ],
+]
+`;

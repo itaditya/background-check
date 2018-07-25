@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createDiscussionIssue is working 1`] = `
+Array [
+  Array [
+    Object {
+      "body": "Some comments from @itaditya have been found to be toxic. Review the following comments and discuss whether or not you would like to allow this contributor to participate in your community.
+
+
+   1. link2 has a toxicity rating of **0.9** :
+
+       > text2
+       
+
+
+   1. link1 has a toxicity rating of **0.8** :
+
+       > text1
+       
+",
+      "owner": "probot-background-check",
+      "repo": "probot-discussions",
+      "title": "itaditya-discussion",
+    },
+  ],
+]
+`;

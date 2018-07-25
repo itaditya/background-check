@@ -4,14 +4,9 @@ process.env.APP_ORG_NAME = 'probot-background-check'
 
 test('createDiscussionIssue is working', async () => {
   const github = {
-    issues: {
-      create ({ owner, repo, title, body }) {
-        expect(owner).toBe('probot-background-check')
-        expect(repo).toBe('probot-discussions')
-        expect(title).toBe('itaditya-discussion')
-      }
-    }
+    issues: { create: jest.fn() }
   }
+
   await createDiscussionIssue(github, {
     owner: 'probot',
     username: 'itaditya',
@@ -25,4 +20,6 @@ test('createDiscussionIssue is working', async () => {
       toxicScore: 0.9
     }]
   })
+
+  expect(github.issues.create.mock.calls).toMatchSnapshot()
 })
