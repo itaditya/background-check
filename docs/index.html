@@ -45,6 +45,36 @@
               
                 
                 <li><a
+                  href='#discussionboardsetupmodule'
+                  class="">
+                  discussionBoardSetupModule
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#discussionboardsetup'
+                  class="">
+                  discussionBoardSetup
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#addcollaboratortorepo'
+                  class="">
+                  addCollaboratorToRepo
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#creatediscussionissue'
                   class="">
                   createDiscussionIssue
@@ -412,6 +442,346 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='discussionboardsetupmodule'>
+      discussionBoardSetupModule
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>discussionBoardSetup module</p>
+
+
+  <div class='pre p1 fill-light mt0'>discussionBoardSetupModule</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>
+  </td>
+  <td class='break-word'><span>accepts the dependecies following 
+<strong>dependency inversion principle</strong>
+.
+</span></td>
+</tr>
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionRepo</span> <code class='quiet'><a href="#creatediscussionrepo">createDiscussionRepo</a></code>
+  </td>
+  <td class='break-word'><span>github-api method to create private discussion repo for the app installer
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.addCollaboratorToRepo</span> <code class='quiet'><a href="#addcollaboratortorepo">addCollaboratorToRepo</a></code>
+  </td>
+  <td class='break-word'><span>github-api method to add collborator to discussion repo
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.githubClient</span> <code class='quiet'>githubClient</code>
+  </td>
+  <td class='break-word'><span>authenticated githubClient with correct permissions
+</span></td>
+</tr>
+
+
+  
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.createDiscussionRepo</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.addCollaboratorToRepo</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.dependencies.githubClient</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#discussionboardsetup">discussionBoardSetup</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> discussionBoardSetup = discussionBoardSetupModule({ <span class="hljs-attr">dependencies</span>: {} })</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='discussionboardsetup'>
+      discussionBoardSetup
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>discussionBoardSetup method</p>
+
+
+  <div class='pre p1 fill-light mt0'>discussionBoardSetup</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    context argument.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">await</span> discussionBoardSetup(context)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='addcollaboratortorepo'>
+      addCollaboratorToRepo
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>addCollaboratorToRepo github-api method used to add collaborators to <strong>probot-background-check/{{owner}}-maintainers-discussion</strong> repo.</p>
+
+
+  <div class='pre p1 fill-light mt0'>addCollaboratorToRepo(github: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>github</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    authenticated github client
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.appInstallerName</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>individual / org account name on which app is installed
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>username of user who installed the app.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='creatediscussionissue'>
       createDiscussionIssue
     </h3>
@@ -420,7 +790,7 @@
   </div>
   
 
-  <p>createDiscussionIssue github-api method used to open an issue in <strong>owner/maintainers-discussion</strong> repo. The issue description will have a list of the toxic comments of user in non increasing order of their toxicity.</p>
+  <p>createDiscussionIssue github-api method used to open an issue in <strong>probot-background-check/{{owner}}-maintainers-discussion</strong> repo. The issue description will have a list of the toxic comments of user in non increasing order of their toxicity.</p>
 
 
   <div class='pre p1 fill-light mt0'>createDiscussionIssue(github: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
@@ -479,7 +849,7 @@
   <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
   </td>
   <td class='break-word'><span>username to create issue for in the 
-<strong>data.owner/maintainers-discussion</strong>
+<strong>probot-background-check/{{data.owner}}-maintainers-discussion</strong>
  repo
 </span></td>
 </tr>
@@ -489,7 +859,7 @@
                 <tr>
   <td class='break-word'><span class='code bold'>data.toxicComments</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
   </td>
-  <td class='break-word'><span>list of toxicComments of the data.username user
+  <td class='break-word'><span>list of toxicComments of the {{data.username}} user
 </span></td>
 </tr>
 
@@ -542,7 +912,7 @@
   </div>
   
 
-  <p>createDiscussionRepo github-api method used to create a discussion repo named appInstallerName-discussions for a user/org in probot-background-check org in which discussion for users who have been hostile will be held.</p>
+  <p>createDiscussionRepo github-api method used to create a discussion repo named <strong>{{appInstallerName}}-discussions</strong> for a user/org in app's org in which discussion for users who have been hostile will be held.</p>
 
 
   <div class='pre p1 fill-light mt0'>createDiscussionRepo(github: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
@@ -711,7 +1081,7 @@
                 <tr>
   <td class='break-word'><span class='code bold'>data.issueNum</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
   </td>
-  <td class='break-word'><span>issue number of the issue in data.owner/data.repo repository
+  <td class='break-word'><span>issue number of the issue in {{data.owner}}/{{data.repo}} repository
 </span></td>
 </tr>
 
@@ -764,7 +1134,7 @@
   </div>
   
 
-  <p>getUserCommentedIssues <strong>github-api method</strong> used to search for issues in which <strong>data.username</strong> has commented.</p>
+  <p>getUserCommentedIssues <strong>github-api method</strong> used to search for issues in which <strong>{{data.username}}</strong> has commented.</p>
 
 
   <div class='pre p1 fill-light mt0'>getUserCommentedIssues(github: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>></div>
@@ -925,7 +1295,7 @@
   <td class='break-word'><span class='code bold'>data.username</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
   </td>
   <td class='break-word'><span>username to search open issue for in the 
-<strong>data.owner/maintainers-discussion</strong>
+<strong>probot-background-check/{{data.owner}}-maintainers-discussion</strong>
  repo
 </span></td>
 </tr>
