@@ -4,7 +4,7 @@
   "description": "",
   "author": "Aditya Agarwal <adityaa803@gmail.com> (adi.surge.sh)",
   "license": "ISC",
-  "repository": "https://github.com/itaditya/probot-demo-bot.git",
+  "repository": "github:probot/background-check",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
