@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "probot": "6.2.1",
+    "probot": "12.3.3",
     "superagent": "^3.8.3"
   },
   "devDependencies": {
